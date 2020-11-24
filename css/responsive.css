@@ -1,0 +1,411 @@
+ /* Extra large devices (large desktops, 1200px and up) */
+ @media (min-width: 1200px) {}
+
+ /* Large devices (desktops, 992px and up) */
+ @media (min-width: 992px) and (max-width: 1199.98px) {
+   .banner_area .tree {
+     display: none;
+   }
+
+   .banner_area .bosta img {
+     transform: translate(46px, 110px);
+     height: 500px;
+     -webkit-transform: translate(46px, 110px);
+     -moz-transform: translate(46px, 110px);
+     -ms-transform: translate(46px, 110px);
+     -o-transform: translate(46px, 110px);
+   }
+
+   .donate_gift img {
+     transform: translate(0%, -7%);
+     -webkit-transform: translate(0%, -7%);
+     -moz-transform: translate(0%, -7%);
+     -ms-transform: translate(0%, -7%);
+     -o-transform: translate(0%, -7%);
+     width: 500px;
+   }
+
+   .sent_wishes .wish_img img {
+     transform: translate(0%, 19%);
+     -webkit-transform: translate(0%, 19%);
+     -moz-transform: translate(0%, 19%);
+     -ms-transform: translate(0%, 19%);
+     -o-transform: translate(0%, 19%);
+     height: 361px !important;
+   }
+
+   .gift {
+     display: flex;
+     flex-direction: column;
+     align-content: center;
+   }
+
+   .santa img {
+     height: 242px;
+     transform: translateY(-18%);
+     -webkit-transform: translateY(-18%);
+     -moz-transform: translateY(-18%);
+     -ms-transform: translateY(-18%);
+     -o-transform: translateY(-18%);
+   }
+
+   .img img {
+     width: 380px;
+     transform: translateX(6%);
+     -webkit-transform: translateX(6%);
+     -moz-transform: translateX(6%);
+     -ms-transform: translateX(6%);
+     -o-transform: translateX(6%);
+   }
+
+   .happy_img img {
+     transform: translate(-14%, 111%);
+     width: 268px;
+   }
+
+   footer .text {
+     color: #fff;
+     font-size: 13px;
+   }
+
+   .copyright_text span {
+     font-size: 12px;
+   }
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+ @media (min-width: 768px) and (max-width: 991.98px) {
+   .section_title {
+     text-align: center;
+     margin-bottom: 70px;
+   }
+
+   .banner_area .text h1 {
+     margin-top: 54px;
+     margin-bottom: 30px;
+     font-size: 60px;
+     line-height: 59px;
+   }
+
+   .navbar.active {
+     display: none;
+   }
+
+   .banner_area .santa_baba img {
+     transform: translateY(61%);
+     -webkit-transform: translateY(61%);
+     -moz-transform: translate(-36%, 26%);
+     -ms-transform: translateY(61%);
+     -o-transform: translateY(61%);
+     height: 352px;
+   }
+
+   .banner_area .bosta img {
+     transform: translate(27px, 52%);
+     height: 341px;
+   }
+
+   .banner_area .tree {
+     display: none;
+   }
+
+   .gift {
+     display: flex;
+     flex-direction: column;
+     /* align-content: ; */
+     align-items: center;
+   }
+
+   .donate_gift img {
+     width: 500px;
+     transform: translate(-27%, -16%);
+     -webkit-transform: translate(-27%, -16%);
+     -moz-transform: translate(-27%, -16%);
+     -ms-transform: translate(-27%, -16%);
+     -o-transform: translate(-27%, -16%);
+   }
+
+   .donate_gift .text {
+     padding-top: 18px;
+     text-align: center;
+   }
+
+   .sent_wishes .wish_img img {
+     transform: translate(-7%, 67%);
+     -webkit-transform: translate(-7%, 67%);
+     -moz-transform: translate(-7%, 67%);
+     -ms-transform: translate(-7%, 67%);
+     -o-transform: translate(-7%, 67%);
+     height: 299px !important;
+   }
+
+   .counter_imgBx img {
+     height: 240px;
+   }
+
+   .counter_imgBx .text {
+     transform: translateY(-14%);
+   }
+
+   .happy_img img {
+     transform: translate(-16%, 177%);
+     height: 138px;
+   }
+
+   .santa img {
+     transform: translateY(-27%);
+     height: 205px;
+   }
+
+   .address span {
+     font-size: 12px;
+   }
+
+   footer .text {
+     display: flex;
+     justify-content: center !important;
+     align-items: center;
+     height: 48px;
+     flex-direction: column;
+     text-align: center;
+   }
+
+   .copyright_text span {
+     text-align: center;
+   }
+ }
+
+ /* Small devices (landscape phones, 576px and up) */
+ @media (min-width: 576px) and (max-width: 767.98px) {
+
+   .banner_area .text h1 {
+     margin-top: 54px;
+   }
+
+   .banner_area .tree {
+     display: none;
+   }
+
+   .banner_area .bosta {
+     display: none;
+   }
+
+   .banner_area .santa_baba img {
+     transform: translate(71%, -82%);
+     height: 310px;
+     -webkit-transform: translate(71%, -82%);
+     -moz-transform: translate(71%, -82%);
+     -ms-transform: translate(71%, -82%);
+     -o-transform: translate(71%, -82%);
+   }
+
+   .donate_gift img {
+     transform: translateX(6%);
+     -webkit-transform: translateX(6%);
+     -moz-transform: translateX(6%);
+     -ms-transform: translateX(6%);
+     -o-transform: translateX(6%);
+     width: 425px;
+   }
+
+   .donate_gift .text {
+     padding-top: 40px;
+     text-align: center;
+   }
+
+   .counter_img {
+     width: 300px;
+   }
+
+   .counter_imgBx img {
+     width: 125%;
+   }
+
+   .counter_imgBx .text {
+     top: 50%;
+     transform: translateY(0%);
+   }
+
+   .counter_board {
+     height: 240px;
+   }
+
+   .counter_imgBx .text span {
+     font-size: 20px;
+     line-height: 2px;
+   }
+
+   .sent_wishes .wish_img img {
+     transform: translate(-1%, 22%);
+     -webkit-transform: translate(-1%, 22%);
+     -moz-transform: translate(-1%, 22%);
+     -ms-transform: translate(-1%, 22%);
+     -o-transform: translate(-1%, 22%);
+     height: 411px !important;
+   }
+
+   .sent_wishes .text {
+     text-align: start;
+   }
+
+   .sent_wishes .row {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+   }
+
+   .happy_img img {
+     transform: translate(-18%, 241%);
+     width: 166px;
+   }
+
+   .santa img {
+     transform: translate(-26%, -27%);
+     height: 195px;
+   }
+
+   .happy_2020 .img img {
+     height: 118px;
+     transform: translateX(-3%);
+   }
+
+   .last_year_party .img img {
+     padding: 15px 0;
+   }
+
+   footer {
+     height: 100%;
+   }
+
+   footer .i_style {
+     width: 45px;
+     height: 45px;
+   }
+
+   footer .text {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+     font-size: 14px;
+     margin-top: 20px;
+     justify-content: center;
+     height: 100px;
+   }
+
+   footer .links {
+     margin-bottom: 30px;
+   }
+
+   .copyright_text span {
+     color: var(--paragraph-color);
+     font-size: 14px;
+     text-align: center;
+   }
+ }
+
+ /* Extra small devices (portrait phones, less than 576px) */
+ @media (max-width: 575.98px) {
+   .banner_area .text h1 {
+     margin-top: -61px;
+     margin-bottom: 24px;
+     font-size: 50px;
+   }
+
+   .banner_area .tree {
+     display: none;
+   }
+
+   .banner_area .bosta img {
+     transform: translate(56px, 333px);
+     height: 200px;
+     -webkit-transform: translate(56px, 333px);
+     -moz-transform: translate(56px, 333px);
+     -ms-transform: translate(56px, 333px);
+     -o-transform: translate(56px, 333px);
+   }
+
+   .banner_area .text {
+     transform: translateY(-25%);
+   }
+
+   .banner_area .text h1 {
+     margin-top: -61px;
+     margin-bottom: 17px;
+     font-size: 50px;
+   }
+
+   .donate_gift img {
+     transform: translateX(3%);
+     -webkit-transform: translateX(3%);
+     -moz-transform: translateX(3%);
+     -ms-transform: translateX(3%);
+     -o-transform: translateX(3%);
+     width: 270px;
+   }
+
+   .counter_imgBx img {
+     width: 100%;
+   }
+
+   .donate_gift .text {
+     text-align: center;
+   }
+
+   .counter_img {
+     max-width: 125px;
+   }
+
+   .counter_imgBx .text span {
+     font-size: 15px;
+   }
+
+   .counter_board {
+     height: 265px;
+   }
+
+   .sent_wishes .wish_img img {
+     transform: translateX(4%);
+     -webkit-transform: translateX(4%);
+     -moz-transform: translateX(4%);
+     -ms-transform: translateX(4%);
+     -o-transform: translateX(4%);
+     width: 325px !important;
+     height: 270px !important;
+   }
+
+   .sent_wishes .text {
+     margin-top: 65px;
+   }
+
+   .happy_2020 .img {
+     transform: translate(20%, 3%);
+     width: 248px;
+     -webkit-transform: translate(20%, 3%);
+     -moz-transform: translate(20%, 3%);
+     -ms-transform: translate(20%, 3%);
+     -o-transform: translate(20%, 3%);
+   }
+
+   .santa img {
+     transform: translate(207%, -322%);
+     height: 135px;
+     -webkit-transform: translate(207%, -322%);
+     -moz-transform: translate(207%, -322%);
+     -ms-transform: translate(207%, -322%);
+     -o-transform: translate(207%, -322%);
+   }
+
+   .happy_img img {
+     display: none;
+     visibility: hidden;
+   }
+
+   .last_year_party .img {
+     width: 164px;
+   }
+   footer .text {
+    height: 100px;
+    margin-bottom: 15px;
+  }
+ }

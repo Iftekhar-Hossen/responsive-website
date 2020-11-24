@@ -1,0 +1,720 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Common css */
+
+a {
+    text-decoration: none !important;
+}
+
+.border_none{
+    border: none !important;
+    border-style: none !important;
+}
+span {
+    display: inline-block;
+}
+
+body {
+    font-family: var(--main-font);
+    color: var(--paragraph-color);
+    font-weight: var(--main-font-weight);
+    font-size: 16px;
+}
+
+:root {
+    --main-font: 'Open Sans', sans-serif;
+    --heading-font: 'Lobster Two', cursive;
+    --headeing-color: #ff5a5a;
+    --paragraph-color: #444444;
+    --main-color: #fff;
+    --form-color: #495057;
+    --main-font-weight: 400;
+    --headeing-font-weight: 700;
+    --sect-title-font-size: 32px;
+    --input-color: #777777;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    color: var(--headeing-color);
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+.section_title {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.section_title h2 {
+    color: var(--headeing-color);
+    font-size: var(--sect-title-font-size);
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.section_title p {
+    font-size: 14px;
+    color: var(--paragraph-color);
+    line-height: 24px;
+}
+
+/* button group start  */
+.whitebtn.hover:hover,
+.whitebtn {
+    outline: none;
+    background: var(--headeing-color);
+    border: 1px solid var(--headeing-color);
+    font-family: var(--heading-font);
+    font-weight: var(--headeing-font-weight);
+    color: var(--main-color);
+    font-size: 20px;
+    padding: 15px 22px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    min-width: 120px;
+}
+
+.whitebtn.hover,
+.whitebtn:hover {
+    background: none;
+    color: var(--headeing-color);
+}
+
+/* button group end  */
+
+/* end common css */
+.header_area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+}
+
+.navbar {
+    padding: 0;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    color: #fff;
+    padding: 50px 10px 20px;
+    position: relative;
+    font-size: 14px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link::before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    content: '';
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    background-image: url(../images/Hover\ Icon.png);
+    height: 0;
+    width: 18px;
+    background-repeat: no-repeat;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+.navbar .navbar-nav .nav-item.active .nav-link::before,
+.navbar .navbar-nav .nav-item:hover>.nav-link::before {
+    height: 45px;
+}
+
+.navbar .logo {
+    width: 140px !important;
+}
+
+.navbar .logo img {
+    width: 100%;
+}
+
+.navbar.active {
+    position: fixed;
+    width: 100%;
+    margin-top: 50px;
+    background: #0a2643;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+
+.navbar.active .logo {
+    margin-bottom: -20px;
+}
+
+.navbar.active ul li a {
+    padding-bottom: 30px !important;
+}
+
+/* banner area  */
+
+.banner_area {
+    position: relative;
+    height: 681px;
+}
+
+::selection {
+    background: none;
+    color: #000;
+}
+
+.banner_area .tree {
+    position: absolute;
+    bottom: -67px;
+    left: 45px;
+}
+
+.banner_area .bosta {
+    transform: translate(-50px, 110px);
+}
+
+.banner_area .santa_baba img {
+	transform: translate(-47%,62%);
+	-webkit-transform: translate(-47%,62%);
+	-moz-transform: translate(-47%,62%);
+	-ms-transform: translate(-47%,62%);
+	-o-transform: translate(-47%,62%);
+	height: 400px;
+}
+
+.banner_area .text h1,
+h2,
+.banner_area .text {
+    text-align: center;
+    color: var(--main-color);
+}
+
+.banner_area .text h1 {
+    margin-top: 54px;
+    margin-bottom: 60px;
+    font-size: 60px;
+}
+
+.banner_area .text h2 {
+    font-family: var(--main-font);
+    font-weight: var(--headeing-font-weight);
+    margin-bottom: 20px;
+}
+
+.banner_area .text p {
+    margin-bottom: 30px;
+    padding: 0 40px;
+}
+
+.banner_area .text button.special_btn {
+    outline: none;
+    background: var(--main-color);
+    border: 1px solid var(--main-color);
+    font-family: var(--heading-font);
+    font-weight: var(--headeing-font-weight);
+    color: var(--headeing-color);
+    font-size: 20px;
+    padding: 16px 20px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+.banner_area .text button.special_btn:hover {
+    background: none;
+    color: var(--main-color);
+}
+
+.banner_area .inner_html {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-dialog {
+    max-width: 1024px;
+    margin: 1.75rem auto;
+    min-width : 100px;
+}
+
+.first_form textarea,
+.modal-dialog input {
+    width: 100%;
+}
+
+.first_form textarea,
+.first_form input {
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    background: var(--main-color);
+    color: var(--form-color);
+    font-size: 16px;
+    padding: 8px 12px;
+    margin: 7px 0;
+}
+
+.first_form input:focus {
+    border: 1px solid rgba(230, 36, 36, 0.5);
+    background: var(--main-color);
+    color: var(--headeing-color);
+    font-size: 16px;
+    padding: 8px 12px;
+    margin: 7px 0;
+    outline: none;
+}
+
+.first_form textarea {
+    height: 100px;
+}
+
+.first_form button {
+    margin-top: 10px;
+}
+
+.form_headeing {
+    text-align: center;
+    font-family: var(--heading-font) !important;
+    color: var(--headeing-color);
+    margin-bottom: 50px !important;
+}
+
+.modal-header {
+    border: none;
+}
+
+/* donate gift section start */
+.donate_gift {
+    margin-top: 266px;
+}
+
+.donate_gift img {
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.donate_gift .text {
+    padding-top: 18px;
+}
+
+.donate_gift .text p {
+    color: var(--paragraph-color) !important;
+    line-height: 24px;
+}
+
+.donate_gift .text p:last-child {
+    margin-top: 30px;
+}
+
+.donate_gift .text .button_group {
+    margin-top: 35px;
+}
+
+.check_boxes {
+    margin-left: 40px;
+}
+
+.single_check {
+    margin-right: 20px;
+}
+
+.check {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: 1px solid var(--form-color);
+    background-color: var(--headeing-color);
+}
+
+/* On mouse-over, add a grey background color */
+.check:hover input~.checkmark {
+    background-color: var(--headeing-color);
+}
+
+/* When the checkbox is checked, add a blue background */
+.check input:checked~.checkmark {
+    background-color: var(--headeing-color);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.check input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.check .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.donate_gift .input {
+    margin-top: 40px;
+    padding: 0 30px;
+}
+
+.donate_gift .input input {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 12px;
+    border: 1px solid #dddddd;
+    background: #ffff;
+    font-size: 13px;
+    color: var(--input-color);
+}
+
+.donate_gift .input input:focus {
+    border: 1px solid var(--headeing-color);
+    color: var(--headeing-color);
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.modal_box h2 {
+    text-align: start;
+    color: var(--headeing-color);
+    margin-bottom: 30px;
+    margin-left: 40px;
+}
+
+.modal_box {
+    padding-bottom: 50px;
+    border-bottom: dashed var(--headeing-color) 1px;
+}
+
+.moadl_title span {
+    font-family: var(--main-font);
+    font-style: italic;
+    font-size: 14px;
+    color: var(--input-color);
+}
+
+.mt-60 {
+    display: inline-block;
+    margin-top: 60px !important;
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+.counter_board {
+    background-image: url(/images/counter-board.jpg);
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.counter_imgBx {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.up {
+    transform: translateY(-40px);
+    -webkit-transform: translateY(-40px);
+    -moz-transform: translateY(-40px);
+    -ms-transform: translateY(-40px);
+    -o-transform: translateY(-40px);
+}
+
+.counter_imgBx .text {
+    position: absolute;
+    color: var(--headeing-color);
+    text-align: center;
+    top: 50%;
+    transform: translateY(-10%);
+}
+
+.counter_imgBx .text span {
+    font-size: 30px;
+    font-weight: var(--main-font-weight);
+    color: var(--headeing-color);
+}
+
+/* sent_wishes section start */
+
+
+.sent_wishes {
+    position: relative;
+}
+
+.sent_wishes .wish_img img {
+    transform: translateX(-12%);
+    -webkit-transform: translateX(-12%);
+    -moz-transform: translateX(-12%);
+    -ms-transform: translateX(-12%);
+    -o-transform: translateX(-12%);
+    height: 450px !important;
+}
+
+.sent_wishes .text {
+    margin-top: 157px;
+}
+
+.sent_wishes .text h3 {
+    font-size: 32px;
+    font-weight: var(--headeing-font-weight);
+    margin-bottom: 13px;
+}
+
+.sent_wishes .text p:nth-child(3) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* sent_wishes section end */
+
+/* happy 2020 section start  */
+
+.happy_2020 {
+    background: url(/images/background-2.png);
+    height: 380px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 180px;
+    position: relative;
+}
+
+.happy_2020 .inner_html {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.happy_img img {
+    transform: translate(-89%, 33%);
+}
+
+.happy_2020 .img {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 380px;
+}
+
+.happy_2020 button {
+    margin-top: 13px;
+}
+
+.santa img {
+	transform: translateY(-18%);
+	height: 303px;
+}
+
+/* happy 2020 section end */
+
+.last_year_party {}
+
+.last_year_party .img {
+    width: 100%;
+}
+
+.last_year_party .img img {
+    width: 100%;
+}
+
+.last_year_party button {
+    margin-top: 30px;
+}
+
+footer {
+    background: url(/images/background-3.png);
+    min-height: 350px;
+    padding: 20px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer .logo {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+footer .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+}
+
+footer .text .icon {}
+
+footer .links {
+    margin-top: 25px;
+}
+footer .address{
+    color: var(--main-color);
+}
+footer .i_style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border: 1px solid var(--main-color);
+    margin: 0 5px;
+    line-height: 35px;
+    border-radius: 50%;
+    color: #000000;
+    font-size: 40px;
+    background: var(--headeing-color);
+    transition: 0.5s ease-out;
+}
+.justify-content-end {
+	justify-content: none;
+}
+footer .text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 48px;
+	flex-direction: column;
+}
+footer .i_style i {
+    font-size: 20px;
+    color: var(--main-color);
+}
+
+footer .icon .i_style.active i,
+footer .i_style:hover i{
+    color: var(--headeing-color);
+}
+
+footer .i_style:hover,
+footer .icon .i_style.active {
+    background: var(--main-color);
+}
+
+.justify-content-end {
+    display: flex;
+    justify-content: end;
+}
+
+footer .follow h2 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer .links {
+    display: flex;
+}
+
+.copyright_text {
+    padding: 20px 0;
+}
+
+.copyright_text span {
+    color: var(--paragraph-color);
+    font-size: 14px;
+}
+
+.copyright_text span mark {
+    background: none;
+    color: var(--headeing-color);
+    text-transform: uppercase;
+}
+
+.modal-content {
+    position: relative;
+    overflow: hidden;
+}
+
+.modal-header .close {
+    position: absolute;
+    top: -2px;
+    right: 4px;
+    width: 50px;
+    height: 50px;
+    background: var(--headeing-color);
+    border-radius: 50%;
+    color: var(--main-color);
+}
