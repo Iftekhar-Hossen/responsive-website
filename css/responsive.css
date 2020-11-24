@@ -408,4 +408,9 @@
     height: 100px;
     margin-bottom: 15px;
   }
+    .navbar.active{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
  }
